@@ -13,7 +13,6 @@ const UserList = ({ users }) => {
             key={index + 1}
             _id={user._id}
             name={user.name}
-            age={user.age}
             email={user.email}
           />
         ))}

@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../../App.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import User from "./User";
 
 const FindUser = ({ findUser }) => {
   const [userData, setUserData] = useState({
@@ -28,11 +29,7 @@ const FindUser = ({ findUser }) => {
   };
 
   return userFound ? (
-    <div className="user-card">
-      <h3>{userData._id}</h3>
-      <p><strong>Name:</strong> {userData.name}</p>
-      <p><strong>Email:</strong> {userData.email}</p>
-    </div>
+    <User _id={userData._id} name={userData.name} email={userData.email} />
   ) : (
     <>
       <ToastContainer />

@@ -43,13 +43,13 @@
 .user-card {
   display: inline-block;
   margin: 16px;
-  width: 250px;
-  height: 120px;
+  width: 280px;
+  height: 400px;
   background-color: whitesmoke;
   color: black;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-  text-align: left;
+  text-align: center;
   padding: 10px;
 }
 
@@ -59,6 +59,13 @@
   color: whitesmoke;
   margin: 0;
   padding: 5px;
+}
+
+.user-card img{
+  height: 280px;
+  width: 280px;
+  align-content: center;
+  margin: 0;
 }
 
 
